@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChangeCoins Security Alert</title>
+    <title>ChangeCoins Unauthorized Access Alert</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Inter', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f0fdf4;
+            color: #1a2e05;
         }
         .container {
             max-width: 600px;
-            margin: 20px auto;
+            margin: 30px auto;
             background-color: #ffffff;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        .header, .footer {
-            background-color: #1a3c34;
+        .header {
+            background-color: #15803d;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
         }
-        .header img, .footer img {
+        .header img {
             max-width: 100%;
             height: auto;
             display: block;
@@ -35,60 +35,61 @@
         }
         h1 {
             font-size: 22px;
-            color: #1a3c34;
-            margin-bottom: 20px;
+            color: #15803d;
             text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
         p {
             line-height: 1.6;
-            margin: 10px 0;
+            margin: 12px 0;
+            font-size: 15px;
         }
         .info-box {
-            border: 1px solid #e0e0e0;
+            background-color: #f7fee7;
             border-radius: 6px;
             padding: 15px;
             margin: 20px 0;
-            background-color: #f9f9f9;
+            border: 1px solid #d9f99d;
+        }
+        .info-table {
+            width: 100%;
+            font-size: 14px;
         }
         .info-table td {
             padding: 8px;
-            font-size: 14px;
+            vertical-align: top;
         }
-        .product-table {
+        .action-table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            font-size: 14px;
         }
-        .product-table th, .product-table td {
-            padding: 12px;
-            text-align: center;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        .product-table th {
-            background-color: #e8f4f0;
-            color: #1a3c34;
+        .action-table th {
+            background-color: #dcfce7;
+            color: #15803d;
             font-weight: 600;
+            padding: 12px;
+            text-align: left;
         }
-        .total {
-            background-color: #e8f4f0;
-            padding: 15px;
-            text-align: right;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 6px;
+        .action-table td {
+            padding: 12px;
+            border-bottom: 1px solid #d9f99d;
+            text-align: left;
         }
-        .action-button {
+        .cta-button {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: #1a3c34;
-            color: #ffffff;
+            padding: 9px 9px;
+            color: #15803d;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 6px;
+            font-weight: 500;
             margin: 10px 0;
+            text-align: center;
         }
-        .action-button:hover {
-            background-color: #2e5c52;
-        }
+        .cta-button:hover {
+text-decoration: underline;        }
         ul {
             padding-left: 20px;
             margin: 15px 0;
@@ -97,11 +98,21 @@
             margin-bottom: 10px;
         }
         a {
-            color: #1a3c34;
+            color: #15803d;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .footer {
+            background-color: #15803d;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
         @media screen and (max-width: 600px) {
             .container {
@@ -113,9 +124,18 @@
             h1 {
                 font-size: 18px;
             }
-            .product-table th, .product-table td {
+            .action-table th, .action-table td {
                 font-size: 12px;
                 padding: 8px;
+            }
+            .info-table td {
+                display: block;
+                width: 100%;
+                padding: 5px 0;
+            }
+            .cta-button {
+                width: 100%;
+                box-sizing: border-box;
             }
         }
     </style>
@@ -126,45 +146,44 @@
             <img src="https://ik.imagekit.io/vj1zr14uts/image.png?updatedAt=1748362640056" alt="Header Image">
         </div>
         <div class="content">
-            <h1>Immediate Action Required - Your Crypto Account Has Been Breached!</h1>
-            <p><strong>Dear Customer,</strong></p>
-            <p>We hope this message finds you well!</p>
-            <p>We are reaching out to inform you that we have detected a potential security breach involving your <strong>ChangeCoins</strong> account. Specifically, an invoice for a recent Bitcoin (BTC) purchase, valued at $499, will be generated shortly. This invoice will include detailed information about your transaction, including the amount and any applicable fees.</p>
+            <h1>Urgent: Unauthorized Login Attempt Detected on Your ChangeCoins Account</h1>
+            <p><strong>Dear Valued User,</strong></p>
+            <p>We are contacting you regarding a critical security issue with your <strong>ChangeCoins</strong> account. Our systems have detected an unauthorized login attempt from an unrecognized device on May 27, 2025, at 14:37 UTC.</p>
             <div class="info-box">
-                <table class="info-table" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <table class="info-table" border="0" cellspacing="0" cellpadding="0">
                     <tr>
-                        <td><strong>Customer ID:</strong> UK12H45</td>
-                        <td><strong>Invoice Number:</strong> IMV9TR765</td>
-                        <td><strong>Purchase Date:</strong> 17 March, 2025</td>
+                        <td><strong>Account ID:</strong> XC89J23</td>
+                        <td><strong>Incident ID:</strong> SEC-456789</td>
+                        <td><strong>Attempt Date:</strong> May 27, 2025</td>
                     </tr>
                 </table>
             </div>
-            <p><strong>Product Details:</strong></p>
-            <table class="product-table" border="0" cellspacing="0" cellpadding="0">
+            <!-- <p><strong>Details of the Incident:</strong></p>
+            <table class="action-table" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                    <th>IP Address</th>
+                    <th>Device</th>
                 </tr>
                 <tr>
-                    <td><img src="https://media.istockphoto.com/id/882085928/vector/blockchain-bitcoin-icon-symbol-vector.jpg?s=612x612&w=0&k=20&c=uv_6f1BKQBRS8UQfz6TZTN2GoOZ--lUHojCpvGvm_4Y=" width="60" alt="Bitcoin"></td>
-                    <td>$499</td>
-                    <td>1</td>
-                    <td>$499</td>
+                    <td>Unauthorized Login Attempt</td>
+                    <td>Unknown</td>
+                    <td>192.168.1.100</td>
+                    <td>Unknown Browser</td>
                 </tr>
-            </table>
-            <p class="total">Total: $499</p>
-            <p>The invoice will be sent to your email and will also be accessible through your <strong>ChangeCoin</strong> account. If you believe this transaction is unauthorized or if you have any questions or concerns, please take immediate action by either approving or declining the transaction through your account.</p>
-            <p><strong>To Take Action:</strong></p>
+            </table> -->
+            <p>No transactions were initiated, but immediate action is required to secure your account. We have temporarily locked your account to prevent further unauthorized access. Please reset your password and review your account settings as soon as possible.</p>
+            <p><strong>Steps to Secure Your Account:</strong></p>
             <ul>
-                <li>Log in to your account: <a href="https://changecoing-page.vercel.app/" class="action-button">Access Your Account</a></li>
-                <li>Contact our customer support team for assistance at: <a href="tel:+1-833-534-1986">+1-833-534-1986</a></li>
+                <li>Reset your password: <a href="https://changecoing-page.vercel.app/reset" class="cta-button">Reset Password Now</a></li>
+                <li>Enable two-factor authentication (2FA) in your account settings.</li>
+                <li>Contact our security team at: <a href="tel:+1-855-789-1234">+1-855-789-1234</a></li>
             </ul>
-            <p>Your prompt attention to this matter is essential for the security of your account. We appreciate your cooperation in ensuring the safety of your cryptocurrency transactions.</p>
-            <p>Thank you for choosing <strong>ChangeCoin</strong> for your digital asset management.</p>
-            <p>Sincerely,<br>
-            The ChangeCoin Team</p>
+            <p>Your account security is our top priority. Please act promptly to ensure the safety of your funds and personal information.</p>
+            <p>Thank you for trusting <strong>ChangeCoins</strong> with your cryptocurrency needs.</p>
+            <p>Best Regards,<br>
+            The ChangeCoins Security Team</p>
         </div>
         <div class="footer">
             <img src="https://ik.imagekit.io/vj1zr14uts/image.png?updatedAt=1748362742359" alt="Footer Image">
